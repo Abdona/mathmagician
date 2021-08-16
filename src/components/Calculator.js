@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
+/*eslint-disable*/
+import operate from '../logic/operate';
+/* eslint-enable */
 
 const MyCalculator = () => {
   let num = '';
