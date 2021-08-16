@@ -6,7 +6,6 @@ Simple Calculator built using React.js.
 
 - Clone the repository , use  `git@github.com:Abdona/math_magicians.git` 
 - open terminal and change Directory, use `cd math_magicians`
-- Install all Dependencies, use `npm install` or `npm i`
 
 ## Usage
 
