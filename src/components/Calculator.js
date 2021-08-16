@@ -26,10 +26,6 @@ const MyCalculator = () => {
         num = total;
       } catch (error) {
         setScreen('Infit');
-        // setTotal(total);
-        // setNext(next);
-        // setOperation(operation);
-        // num = total;
       }
     } else if (e.target.innerText === '+/-') {
       const { total, next, operation } = calculate(state, e.target.innerText);
@@ -39,6 +35,7 @@ const MyCalculator = () => {
       setOperation(operation);
       num = next || total;
     } else {
+      if (screen === 0) setScreen('');
       setScreen((prevscreen) => setScreen(prevscreen + e.target.innerText));
       const { total, next, operation } = calculate(state, e.target.innerText);
       setTotal((prevTotal) => total || prevTotal);
