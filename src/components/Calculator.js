@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class MyCalculator extends React.Component {
+class MyCalculator extends React.Component {
   constructor(props) {
     super(props);
     this.state = '';
@@ -33,3 +33,5 @@ export default class MyCalculator extends React.Component {
     );
   }
 }
+
+export default MyCalculator;
