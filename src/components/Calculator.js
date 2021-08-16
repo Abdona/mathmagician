@@ -10,19 +10,27 @@ const MyCalculator = () => {
   const state = { total, next, operation };
   const calchandler = (e) => {
     if (e.target.innerText === 'AC') {
-      num = '';
+      num = 0;
       const { total, next, operation } = calculate(state, e.target.innerText);
       setScreen(num);
       setTotal(total);
       setNext(next);
       setOperation(operation);
     } else if (e.target.id === 'eqoperation') {
-      const { total, next, operation } = calculate(state, e.target.innerText);
-      setScreen(total);
-      setTotal(total);
-      setNext(next);
-      setOperation(operation);
-      num = total;
+      try {
+        const { total, next, operation } = calculate(state, e.target.innerText);
+        setScreen(total);
+        setTotal(total);
+        setNext(next);
+        setOperation(operation);
+        num = total;
+      } catch (error) {
+        setScreen('Infit');
+        // setTotal(total);
+        // setNext(next);
+        // setOperation(operation);
+        // num = total;
+      }
     } else if (e.target.innerText === '+/-') {
       const { total, next, operation } = calculate(state, e.target.innerText);
       setScreen(next || total);
