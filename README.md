@@ -2,6 +2,8 @@
 
 Simple Calculator built using React.js.
 
+## Calculator Preview
+![](./calculator.png)
 
 ## Installation
 
