@@ -1,7 +1,10 @@
-/* eslint-disable react/no-access-state-in-setstate */
-/* eslint-disable react/destructuring-assignment */
 import React from 'react';
 import calculate from '../logic/calculate';
+/* eslint-disable */
+import operate from '../logic/operate';
+/* eslint-enable */
+/* eslint-disable react/no-access-state-in-setstate */
+/* eslint-disable react/destructuring-assignment */
 
 class MyCalculator extends React.Component {
   constructor(props) {
