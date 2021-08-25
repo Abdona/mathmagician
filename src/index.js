@@ -1,10 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
 import './components/Calculator.css';
-import './app.css';
-import './components/home.css';
-import './components/quote.css';
+import App from './App';
 
 ReactDOM.render(
   <React.StrictMode>

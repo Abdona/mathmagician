@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import calculate from '../logic/calculate';
-
 /*eslint-disable*/
 import operate from '../logic/operate';
 /* eslint-enable */
@@ -48,30 +47,27 @@ const MyCalculator = () => {
     }
   };
   return (
-    <div className="page-section">
-      <h1>Let`s do some math</h1>
-      <div className="grid-continer">
-        <input className="resultscreen" readOnly placeholder={screen} />
-        <button onClick={calchandler} type="button">AC</button>
-        <button onClick={calchandler} type="button">+/-</button>
-        <button onClick={calchandler} type="button">%</button>
-        <button onClick={calchandler} type="button" className="buttoperation">÷</button>
-        <button onClick={calchandler} type="button">7</button>
-        <button onClick={calchandler} type="button">8</button>
-        <button onClick={calchandler} type="button">9</button>
-        <button onClick={calchandler} type="button" className="buttoperation">x</button>
-        <button onClick={calchandler} type="button">4</button>
-        <button onClick={calchandler} type="button">5</button>
-        <button onClick={calchandler} type="button">6</button>
-        <button onClick={calchandler} type="button" className="buttoperation">-</button>
-        <button onClick={calchandler} type="button">1</button>
-        <button onClick={calchandler} type="button">2</button>
-        <button onClick={calchandler} type="button">3</button>
-        <button onClick={calchandler} type="button" className="buttoperation">+</button>
-        <button onClick={calchandler} type="button" className="zeroitem">0</button>
-        <button onClick={calchandler} type="button">.</button>
-        <button onClick={calchandler} type="button" id="eqoperation" className="buttoperation">=</button>
-      </div>
+    <div className="grid-continer">
+      <input className="resultscreen" readOnly placeholder={screen} />
+      <button onClick={calchandler} type="button">AC</button>
+      <button onClick={calchandler} type="button">+/-</button>
+      <button onClick={calchandler} type="button">%</button>
+      <button onClick={calchandler} type="button" className="buttoperation">÷</button>
+      <button onClick={calchandler} type="button">7</button>
+      <button onClick={calchandler} type="button">8</button>
+      <button onClick={calchandler} type="button">9</button>
+      <button onClick={calchandler} type="button" className="buttoperation">x</button>
+      <button onClick={calchandler} type="button">4</button>
+      <button onClick={calchandler} type="button">5</button>
+      <button onClick={calchandler} type="button">6</button>
+      <button onClick={calchandler} type="button" className="buttoperation">-</button>
+      <button onClick={calchandler} type="button">1</button>
+      <button onClick={calchandler} type="button">2</button>
+      <button onClick={calchandler} type="button">3</button>
+      <button onClick={calchandler} type="button" className="buttoperation">+</button>
+      <button onClick={calchandler} type="button" className="zeroitem">0</button>
+      <button onClick={calchandler} type="button">.</button>
+      <button onClick={calchandler} type="button" id="eqoperation" className="buttoperation">=</button>
     </div>
   );
 };
