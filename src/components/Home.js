@@ -2,7 +2,7 @@
 import React from 'react';
 
 const HomePage = () => (
-  <>
+  <div className="main-section">
     <h1>
       Welcome to our page
     </h1>
@@ -18,7 +18,7 @@ const HomePage = () => (
 
       Nunc nec massa eros. Aenean placerat efficitur diam ac sollicitudin. Mauris purus eros, scelerisque quis diam commodo, venenatis cursus nunc. Maecenas non eros libero. Proin rhoncus lorem eget diam mollis, at suscipit felis vestibulum. Sed nec tellus purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Pellentesque id egestas justo. Phasellus eu lorem ut velit malesuada congue vitae in nulla. Vivamus nec lobortis tortor. Sed suscipit nulla sem, convallis convallis elit vehicula at. Fusce a faucibus felis. Morbi sit amet massa interdum, eleifend neque eget, accumsan dui. Maecenas semper lacus a eros malesuada, at tincidunt massa vehicula. Nullam vestibulum ornare elementum. Morbi vulputate orci in tincidunt mollis.
     </p>
-  </>
+  </div>
 );
 
 export default HomePage;

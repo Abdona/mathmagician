@@ -8,7 +8,6 @@ import {
 import MyCalculator from './components/Calculator';
 import HomePage from './components/Home';
 import Quote from './components/Quote';
-import './app.module.css';
 
 function App() {
   return (
