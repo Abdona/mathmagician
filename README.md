@@ -5,7 +5,7 @@ Simple Calculator built using React.js.
 ## Calculator Preview
 ![](./homepage.png) | ![](./calcpage.png) | ![](./quotepage.png) |
 | :------------: | :------------: | :------------: |
-|  Home Page | Calculator Page | Quote Page |
+|  Home Page | Calculator Page | Quote Page|
 
 ## Installation
 
