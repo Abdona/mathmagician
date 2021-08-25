@@ -17,7 +17,7 @@ function App() {
           <h1>Math Magicians</h1>
           <ul>
             <li>
-              <Link to="/home">Home</Link>
+              <Link to="/">Home</Link>
             </li>
             <li>
               <Link to="/calculator">Calculator</Link>
@@ -29,14 +29,14 @@ function App() {
         </nav>
 
         <Switch>
-          <Route path="/home">
-            <HomePage />
-          </Route>
           <Route path="/quotes">
             <Quote />
           </Route>
           <Route path="/calculator">
             <MyCalculator />
+          </Route>
+          <Route path="/">
+            <HomePage />
           </Route>
         </Switch>
       </div>
