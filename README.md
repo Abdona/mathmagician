@@ -7,6 +7,7 @@ Simple Calculator built using React.js.
 | :------------: | :------------: | :------------: |
 |  Home Page | Calculator Page | Quote Page|
 
+
 ## Installation
 
 - Clone the repository , use  `git@github.com:Abdona/math_magicians.git` 
