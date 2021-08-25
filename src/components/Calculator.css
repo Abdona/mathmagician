@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: auto auto auto auto;
   padding: 20px;
-  width: 40%;
-  margin: 0 auto;
+  width: 80%;
 }
 
 .buttoperation {
@@ -41,4 +40,13 @@ button:active {
 
 .zeroitem {
   grid-column: 1/3;
+}
+
+.page-section {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.page-section h1 {
+  padding: 20px;
 }

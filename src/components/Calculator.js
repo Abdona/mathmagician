@@ -48,7 +48,7 @@ const MyCalculator = () => {
     }
   };
   return (
-    <>
+    <div className="page-section">
       <h1>Let`s do some math</h1>
       <div className="grid-continer">
         <input className="resultscreen" readOnly placeholder={screen} />
@@ -72,7 +72,7 @@ const MyCalculator = () => {
         <button onClick={calchandler} type="button">.</button>
         <button onClick={calchandler} type="button" id="eqoperation" className="buttoperation">=</button>
       </div>
-    </>
+    </div>
   );
 };
 
