@@ -4,6 +4,7 @@ import App from './App';
 import './components/Calculator.css';
 import './app.css';
 import './components/home.css';
+import './components/quote.css';
 
 ReactDOM.render(
   <React.StrictMode>
