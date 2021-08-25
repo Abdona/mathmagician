@@ -8,13 +8,14 @@ import {
 import MyCalculator from './components/Calculator';
 import HomePage from './components/Home';
 import Quote from './components/Quote';
+import './app.module.css';
 
 function App() {
   return (
     <Router>
       <div>
-        <h1>Math Magicians</h1>
-        <nav>
+        <nav className="nav-bar">
+          <h1>Math Magicians</h1>
           <ul>
             <li>
               <Link to="/home">Home</Link>
