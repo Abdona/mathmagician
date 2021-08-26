@@ -18,4 +18,13 @@ describe('Test operate function', () => {
   test('divide operation return String 0.5 as a result', () => {
     expect(operate(fnum, snum, '÷')).toEqual('0.5');
   });
+
+  // fnum mod snum ==> 5%10
+  test('mod operation return String 5 as a result', () => {
+    expect(operate(fnum, snum, '%')).toEqual('5');
+  });
+  // snum mod fnum ==> 10%5
+  test('mod operation return String 0 as a result', () => {
+    expect(operate(snum, fnum, '%')).toEqual('0');
+  });
 });
