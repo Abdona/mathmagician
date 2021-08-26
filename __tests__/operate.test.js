@@ -14,4 +14,8 @@ describe('Test operate function', () => {
   test('Multiply operation return String 50 as a result', () => {
     expect(operate(fnum, snum, 'x')).toEqual('50');
   });
+
+  test('divide operation return String 0.5 as a result', () => {
+    expect(operate(fnum, snum, '÷')).toEqual('0.5');
+  });
 });
