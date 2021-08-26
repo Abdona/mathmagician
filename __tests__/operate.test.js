@@ -10,4 +10,8 @@ describe('Test operate function', () => {
   test('subtract operation return String -5 as a result', () => {
     expect(operate(fnum, snum, '-')).toEqual('-5');
   });
+
+  test('Multiply operation return String 50 as a result', () => {
+    expect(operate(fnum, snum, 'x')).toEqual('50');
+  });
 });
