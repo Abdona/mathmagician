@@ -1,4 +1,4 @@
-import calculate from './logic/calculate';
+import calculate from '../src/logic/calculate';
 
 test('Should match state', () => {
   const mockState = {
