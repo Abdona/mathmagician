@@ -2,7 +2,7 @@
 import React from 'react';
 
 const HomePage = () => (
-  <div className="main-section">
+  <div className="main-section" data-testid="homepage">
     <h1>
       Welcome to our page
     </h1>
