@@ -15,14 +15,14 @@ const MyCalculator = () => {
   const calchandler = (e) => {
     if (e.target.innerText === 'AC') {
       num = 0;
-      const { total, next, operation } = calculate(state, e.target.innerText);
+      const { total, next, operation } = calculate(state, e.target.textContent);
       setScreen(num);
       setTotal(total);
       setNext(next);
       setOperation(operation);
     } else if (e.target.id === 'eqoperation') {
       try {
-        const { total, next, operation } = calculate(state, e.target.innerText);
+        const { total, next, operation } = calculate(state, e.target.textContent);
         setScreen(total);
         setTotal(total);
         setNext(next);
@@ -32,7 +32,7 @@ const MyCalculator = () => {
         setScreen('Infit');
       }
     } else if (e.target.innerText === '+/-') {
-      const { total, next, operation } = calculate(state, e.target.innerText);
+      const { total, next, operation } = calculate(state, e.target.textContent);
       setScreen(next || total);
       setTotal(total);
       setNext(next);
@@ -40,18 +40,18 @@ const MyCalculator = () => {
       num = next || total;
     } else {
       if (screen === 0) setScreen('');
-      setScreen((prevscreen) => setScreen(prevscreen + e.target.innerText));
-      const { total, next, operation } = calculate(state, e.target.innerText);
+      setScreen((prevscreen) => setScreen(prevscreen + e.target.textContent));
+      const { total, next, operation } = calculate(state, e.target.textContent);
       setTotal((prevTotal) => total || prevTotal);
       setNext(next);
       setOperation((prevOper) => operation || prevOper);
     }
   };
   return (
-    <div className="page-section">
+    <div className="page-section" data-testid="mycalc">
       <h1>Let`s do some math</h1>
       <div className="grid-continer">
-        <input className="resultscreen" readOnly placeholder={screen} />
+        <input className="resultscreen" readOnly placeholder={screen || 0} />
         <button onClick={calchandler} type="button">AC</button>
         <button onClick={calchandler} type="button">+/-</button>
         <button onClick={calchandler} type="button">%</button>
