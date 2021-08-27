@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import ReactDOM from 'react-dom';
-import HomePage from '../src/components/Home';
+import HomePage from '../components/Home';
 import '@testing-library/jest-dom';
 
 describe('Test Home page Components', () => {

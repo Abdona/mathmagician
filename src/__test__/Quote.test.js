@@ -2,7 +2,7 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import ReactDOM from 'react-dom';
-import Quote from '../src/components/Quote';
+import Quote from '../components/Quote';
 import '@testing-library/jest-dom';
 
 describe('Test Quote page Components', () => {
