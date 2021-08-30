@@ -3,7 +3,8 @@
 Simple Calculator built using React.js.
 
 ## Live Demo
-[mathmagician](https://mathmagicians1.herokuapp.com/)
+[Heroku](https://mathmagicians1.herokuapp.com/)
+[Netlify](https://keen-panini-01e6b0.netlify.app/)
 
 ## Calculator Preview
 ![](./homepage.png) | ![](./calcpage.png) | ![](./quotepage.png) |
