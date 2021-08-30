@@ -2,6 +2,9 @@
 
 Simple Calculator built using React.js.
 
+## Live Demo
+[mathmagician](https://mathmagicians1.herokuapp.com/)
+
 ## Calculator Preview
 ![](./homepage.png) | ![](./calcpage.png) | ![](./quotepage.png) |
 | :------------: | :------------: | :------------: |
